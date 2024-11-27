@@ -6,3 +6,8 @@
     width: 100%;
     gap: 10px;
   }
+  
+  details {
+    position: relative;
+    min-width: 100px;
+  }
