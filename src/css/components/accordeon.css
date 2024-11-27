@@ -7,7 +7,12 @@
     gap: 10px;
   }
   
-  details {
+details {
     position: relative;
     min-width: 100px;
   }
+
+details[open] {
+  display: flex;
+  gap: 10px;
+}
