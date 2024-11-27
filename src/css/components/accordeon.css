@@ -18,63 +18,29 @@ details[open] {
 summary {
     list-style: none;
     cursor: pointer;
+    
   }
 
 summary::-webkit-details-marker {
     display: none;
   }
 
-details[open] summary ~ * {
-    animation: fadeIn 0.5s ease-in-out;
-}
+  details > summary {
+    list-style: none;
+  }
+details > summary::-webkit-details-marker {
+    display: none;
+  }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-details[open] summary ~ * {
-    animation: slideDown 0.5s ease-in-out;
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.arrow-right {
+.arrow {
     width: 0; 
     height: 0; 
-    border-top: 80px solid transparent;
-    border-bottom: 80px solid transparent;
-    border-left: 80px solid green;
-    transition: all 0.3s ease;
-}
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
 
-.arrow-down {
-    width: 0; 
-    height: 0; 
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
-    border-top: 80px solid green;
-    transition: all 0.3s ease;
-}
-
-details[open] .arrow-right {
+    border-left: 30px solid grey;
+  }
+details[open] .arrow {
     transform: rotate(90deg);
-}
 
-details[open] .arrow-down {
-    transform: rotate(0deg);
 }
