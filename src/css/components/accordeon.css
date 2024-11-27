@@ -15,4 +15,12 @@ details[open] {
     gap: 10px;
   }
 
+summary {
+    list-style: none;
+    cursor: pointer;
+  }
+
+summary::-webkit-details-marker {
+    display: none;
+  }
  
